@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imad ASSERNE | Portfolio</title>
-    <!-- link of icon -->
-    <link rel="icon" type="image/x-icon" href="images/icon.png" />
-    <!-- link of css -->
+    <title>Imad ASSERNE | full stack developer java</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <!-- link css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- link of font-awesome  -->
+    <!--font-awesome/6.4.0  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,7 +18,305 @@
     />
   </head>
   <body>
-    <i class="fa-brands fa-facebook"></i>
-    <script src="main.js"></script>
+    <header id="home">
+      <div class="navbar">
+        <nav>
+          <a href="#home" id="logo">Imad Asserne</a>
+
+          <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Education</a></li>
+            <li><a href="#exprience">Expriences</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content">
+        <div class="content-text">
+          <p><span class="text-primary">Salut, je suis</span></p>
+          <h1>Imad Asserne</h1>
+          <p class="title">full stack developer java</p>
+          <div class="social">
+            <a target="_blank" href="https://www.facebook.com/imad.asserne/" id="facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a target="_blank" href="https://www.linkedin.com/in/imad-asserne-9046b8253/" id="linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://www.instagram.com/imad.zoldyck/"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a target="_blank" href="https://github.com/IMADWRGH"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a
+            href="./resume/Imad ASSERNE_CV .pdf"
+            class="btn-primay"
+            download="Imad Asserner |CV"
+            >Télécharger CV <i class="fa-solid fa-circle-arrow-down"></i
+          ></a>
+        </div>
+        <img
+          src="./images/home.png"
+          alt="just an image"
+          title="just an image"
+        />
+      </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <h2>À propos</h2>
+        <hr />
+        <div class="about-content">
+          <div class="col-1">
+            <img 
+              src="./images/about_me.png"
+              alt="just an image"
+            />
+          </div>
+          <div class="col-2">
+            <h3>
+              Je suis <span class="text-primary">Imad Asserne,</span>
+              ingénieure en Télecom
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quibusdam deserunt sequi debitis assumenda ipsum quaerat, error
+              necessitatibus recusandae cumque molestias id, voluptatum quia
+              tenetur laudantium.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus itaque ea quia? Tenetur aut dolorem aspernatur beatae
+              architecto a ratione.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Compétences &amp; <span class="text-primary"> Capacités</span></h2>
+        <hr />
+        <div class="skills-content">
+          <div class="row">
+            <div class="flip-card">
+              <div class="face-card">
+                <p id="face-skills">Outils ingénieurie</p>
+              </div>
+              <div class="back-card">
+                <ul>
+                  <li>IQLink</li>
+                  <hr />
+                  <li>GMAO</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="face-card"><p id="face-abillite">Télecom</p></div>
+              <div class="back-card">
+                <ul>
+                  <li>Réseaux mobiles (2G,3G,4G,5G) divers clients</li>
+                  <hr />
+                  <li>Transmission FH</li>
+                  <hr />
+                  <li>Fibre optique et multiplexage en longueur d'onde WDM</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="face-card"><p id="face-skills">Management</p></div>
+              <div class="back-card">
+                <ul>
+                  <li>Pack MS Office</li>
+                  <hr />
+                  <li>Gestion de Projet</li>
+                  <hr />
+                  <li>Procès TDF tous opérateurs confondu</li>
+                  <hr />
+                  <li>Procès déploiement Orange/Totem</li>
+                  <hr />
+                  <li>procès déploiement SFR VDR crozon</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="face-card">
+                <p id="face-abillite">Logiciels & Langages</p>
+              </div>
+              <div class="back-card">
+                <ul>
+                  <li>Matlab</li>
+                  <hr />
+                  <li>LABVIEW</li>
+                  <hr />
+                  <li>ADS</li>
+                  <hr />
+                  <li>C</li>
+                  <hr />
+                  <li>Java</li>
+                  <hr />
+                  <li>SytemVue</li>
+                  <hr />
+                  <li>CST</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="timeline">
+      <div class="container">
+        <h2>Formation <span class="text-primary"> Professionnelle</span></h2>
+        <hr />
+
+        <div class="timeline-items" id="animation">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="date">2011-2015</div>
+          <div class="timeline-content">
+            <h3 >Université Sultan Moulay slimane-Maroc </h3>
+             <p> DEUST</p>
+          </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="date">2015-2016</div>
+          <div class="timeline-content">
+            <h3 >Université Sultan Moulay slimane-Maroc </h3>
+             <p> Licence sciences et Techniques</p>
+          </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="date">2016-2017</div>
+          <div class="timeline-content">
+            <h3 >Université Limoges-France </h3>
+             <p> Licence professionnelle</p>
+          </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="date">2017-2019</div>
+          <div class="timeline-content">
+            <h3 >Université Limoges-France </h3>
+             <p> Master sciences et Technologies de la communication</p>
+          </div>
+          </div>
+        </div>
+    </section>
+     <section id="services">
+      <div class="container">
+        <h2>Mes <span class="text-primary">Services</span></h2>
+        <hr>
+        <div class="rows">
+          <div class="item">
+            <img src="./images/about_me.png" alt="Team management" >
+            <h3>Gestion d'équipe</h3>
+            <p>Optimisez la productivité et la collaboration grâce à des outils technologiques.</p>
+          </div>
+          <div class="item">
+            <img src="./images/about_me.png" alt="Customer relations" >
+            <h3>Relation client</h3>
+            <p>Améliorez la fidélité et augmentez les ventes grâce à une expérience personnalisée.</p>
+          </div>
+          <div class="item">
+             <img src="./images/about_me.png" alt="Project management" >
+            <h3>Gestion de projet</h3>
+            <p>Coordonnez les efforts pour atteindre les objectifs stratégiques et assurez le succès de vos projets en optimisant le temps, les ressources et la collaboration.</p>
+          </div>
+          </div>
+      </div>
+    </section>
+    <section id="exprience">
+      <div class="container">
+        <h2>Résumé de <span class="text-primary">Carrière</span></h2>
+        <hr />
+
+       <div class="progress-container"> 
+            <ul id="progressbar"> 
+                <li class="active" 
+                    id="step1"> 
+                    <strong>Mars-Août 2019</strong> 
+                </li> 
+                <li id="step2"> 
+                      <strong>October-Mars 2021</strong> 
+                  </li> 
+                <li id="step3"> 
+                      <strong>Avril-Juil 2021</strong> 
+                  </li> 
+                <li id="step4"> 
+                      <strong>Aout 2021-Aujourd'hui</strong> 
+                  </li> 
+            </ul> 
+            <div class="progress"> 
+             <div class="progress-bar"></div> 
+            </div> 
+        </div> 
+        <div class="step-container"> 
+            <fieldset> 
+   <h3>STAGE PFE au service de transmission  Huawei Technologies </h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis delectus esse eveniet quo eos placeat, aut iusto reiciendis dignissimos ex eius ut doloremque facilis!</p>
+                  <input type="button"
+                       name="next-step"
+                       class="next-step"
+                       value="Next" /> 
+            </fieldset> 
+            <fieldset> 
+  <h3>Chargée d'études &ingénieurie | Circet Maroc</h3>              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis delectus esse eveniet quo eos placeat, aut iusto reiciendis dignissimos ex eius ut doloremque facilis!</p>
+    <input type="button"
+                       name="next-step" 
+                       class="next-step" 
+                       value="Next" /> 
+                <input type="button"
+                       name="previous-step" 
+                       class="previous-step" 
+                       value="Previous" /> 
+            </fieldset> 
+            <fieldset> 
+<h3>Pilote de production | Circet Maroc </h3>             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis delectus esse eveniet quo eos placeat, aut iusto reiciendis dignissimos ex eius ut doloremque facilis!</p>
+   <input type="button" 
+                       name="next-step" 
+                       class="next-step" 
+                       value="Next" /> 
+                <input type="button" 
+                       name="previous-step" 
+                       class="previous-step" 
+                       value="Previous" /> 
+            </fieldset> 
+            <fieldset> 
+                <div class="finish"> 
+                    <h3>Responsable BE guichet TDF | Circet Maroc </h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis delectus esse eveniet quo eos placeat, aut iusto reiciendis dignissimos ex eius ut doloremque facilis!</p>
+                </div> 
+                <input type="button" 
+                       name="previous-step" 
+                       class="previous-step"
+                       value="Previous" /> 
+            </fieldset> 
+      
+      </div> 
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Rester en<span class="text-primary">  Contact</span></h2>
+        <hr />
+        <div class="rows">
+          <img src="./images/contact.png" alt="contact images">
+          <form action="#" method="POST">
+            <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+            <input type="text" name="name" id="name" placeholder="Voter Nom..." required>
+            <input type="email" name="email" id="email" placeholder="Voter E-mail..." required>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn-primay">
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer"></section>
+
+    <!-- link js -->
+    <script src="main.js" defer></script>
   </body>
 </html>
