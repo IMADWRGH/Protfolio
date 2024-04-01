@@ -430,14 +430,14 @@ header .header-content .social a i:hover {
     }
 }
 
-/* services */
+/* projects */
 
-#services {
+#projects {
     background-color: var(--bg-color);
     padding: 6rem 0;
 }
 
-#services .rows {
+#projects .rows {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 4rem;
@@ -446,7 +446,7 @@ header .header-content .social a i:hover {
     row-gap: 4rem;
 }
 
-#services .rows .item {
+#projects .rows .item {
     background: rgba(255, 255, 255, 0.276);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -456,21 +456,21 @@ header .header-content .social a i:hover {
     transition: all 0.3s ease-in-out;
 }
 
-#services .rows .item img {
+#projects .rows .item img {
     width: 282px;
     height: 180px;
 }
 
-#services .rows .item:hover {
+#projects .rows .item:hover {
     transform: scale(1.04);
 }
 
-#services .rows .item h3 {
+#projects .rows .item h3 {
     margin: 15px 0;
     color: var(--primary-color);
 }
 
-#services .rows .item p {
+#projects .rows .item p {
     font-size: 16px;
 }
 
