@@ -499,7 +499,7 @@ header .header-content .social a i:hover {
 }
 
 #projects .rows .item:hover {
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 
 #projects .rows .item h3 {
