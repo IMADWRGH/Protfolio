@@ -217,6 +217,23 @@ header .header-content .social a i:hover {
     transform: scale(1.1);
 }
 
+/* Responsive */
+@media screen and (max-width:768px) {
+    header .navbar nav {
+        display: block;
+        text-align: center;
+    }
+
+    header .navbar nav ul {
+        margin-top: 20px;
+    }
+
+    header .navbar nav ul a {
+        margin: 0 8px;
+    }
+
+}
+
 /* about */
 #about {
     padding: 6rem;
