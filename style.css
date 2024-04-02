@@ -657,3 +657,70 @@ h3 {
 .finish {
     text-align: center;
 }
+
+/* footer */
+#footer {
+    background-color: #fff;
+}
+
+#footer .footer_container {
+    width: 100%;
+    padding: 35px 15px 10px;
+}
+
+#footer .social_footer {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social_footer a {
+    padding: 10px;
+    background-color: var(--gray-color);
+    margin: 5px;
+    border-radius: 50px;
+
+}
+
+#footer .social_footer a i {
+    font-size: 25px;
+    color: #252024;
+    opacity: 0.9;
+}
+
+#footer .social_footer a:hover {
+    background-color: #b9b6b6;
+    transition: 0.5s;
+}
+
+#footer .social_footer a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+#footer .navbar-footer {
+    margin: 30px 0;
+}
+
+#footer .navbar-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .navbar-footer ul li a {
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#footer .navbar-footer ul li a:hover {
+    opacity: 1;
+}
+
+#footer .footer-bottom {
+    background-color: var(--gray-color);
+    text-align: center;
+}
