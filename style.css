@@ -197,6 +197,26 @@ header .header-content .social a i:hover {
     transform: scale(0.85);
 }
 
+
+.btn-main {
+    color: beige;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.187em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 0.8s ease;
+}
+
+.btn-main:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
 /* about */
 #about {
     padding: 6rem;
