@@ -614,9 +614,23 @@ h3 {
 }
 
 .step-container p {
+    text-align: start;
+    padding: 1.5rem;
+}
+
+.step-container {
     text-align: center;
-    padding: 2rem;
-    margin: 2rem;
+}
+
+.exp-list {
+    text-align: justify;
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+.exp-list li {
+    padding: 0 1.5rem;
+    list-style-type: disc;
 }
 
 .next-step,
