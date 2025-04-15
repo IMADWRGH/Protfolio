@@ -738,3 +738,273 @@ h3 {
     background-color: var(--gray-color);
     text-align: center;
 }
+
+
+/* for all divece */
+/* Existing CSS remains the same until the media queries */
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+    header .header-content img {
+        width: 400px;
+    }
+
+    #contact .rows img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    header .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 8rem;
+    }
+
+    header .header-content img {
+        display: none;
+    }
+
+    #about .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #about .about-content .col-1 img {
+        margin: 0 auto;
+    }
+
+    #skills .skills-content .row {
+        grid-template-columns: 1fr;
+    }
+
+    #skills .row .flip-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #projects .rows {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact .rows {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .rows img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #contact,
+    #exprience {
+        padding: 4rem 0;
+    }
+
+    header .header-content h1 {
+        font-size: 48px;
+    }
+
+    .navbar nav ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar nav ul a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .timeline-items::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    #footer .navbar-footer ul {
+        flex-wrap: wrap;
+    }
+
+    #footer .navbar-footer ul li a {
+        margin: 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    header .header-content h1 {
+        font-size: 36px;
+    }
+
+    .btn-main {
+        padding: 0.8em 1.5em;
+    }
+
+    #projects .rows {
+        grid-template-columns: 1fr;
+    }
+
+    #projects .rows .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-content .social a i {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #footer .social_footer a i {
+        font-size: 20px;
+    }
+
+    .progress-container {
+        overflow-x: auto;
+    }
+
+    #progressbar {
+        width: 600px;
+        /* Allows horizontal scrolling on small devices */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    header .header-content h1 {
+        font-size: 32px;
+    }
+
+    .navbar nav ul a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    #about .about-content .col-1 img {
+        width: 100%;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+
+    .timeline-content p {
+        font-size: 16px;
+    }
+
+    #contact .rows {
+        padding: 1rem;
+    }
+
+    .btn-primay,
+    .btn-main {
+        font-size: 12px;
+    }
+}
+
+/* Very small devices (phones, 360px and down) */
+@media screen and (max-width: 360px) {
+    header .header-content h1 {
+        font-size: 28px;
+    }
+
+    .header-content .title {
+        font-size: 16px;
+    }
+
+    .navbar nav ul a {
+        margin: 0 3px;
+        font-size: 12px;
+    }
+
+    #footer .navbar-footer ul li a {
+        font-size: 14px;
+        margin: 5px;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    header {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .header-content {
+        padding-top: 7rem !important;
+    }
+
+    .navbar nav ul a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet portrait */
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+    header .header-content {
+        padding-top: 10rem;
+    }
+
+    #about .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    #about .about-content .col-1 img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* Adjustments for very large screens */
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    header .header-content img {
+        width: 600px;
+    }
+
+    #contact .rows img {
+        width: 600px;
+    }
+}
