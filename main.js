@@ -1,13 +1,22 @@
-let animationStart = document.getElementById("education");
-window.addEventListener("scroll", function () {
-    var winScrollTop = document.documentElement.scrollTop;
-    // console.log("top:" + winScrollTop);
-    if (winScrollTop >= 1887) {
-        animationStart.style.display = "block";
-    } else {
-        animationStart.style.display = "none";
-    }
-});
+// Use Intersection Observer for better performance and responsiveness
+const educationSection = document.getElementById("education");
+
+if (educationSection) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                educationSection.style.display = "block";
+            } else {
+                educationSection.style.display = "none";
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px"
+    });
+
+    observer.observe(educationSection);
+}
 
 // script.js 
 document.addEventListener("DOMContentLoaded", function () {
@@ -102,26 +111,30 @@ scrollToTopBtn.addEventListener("click", function () {
 const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
 
-    // Change icon based on menu state
-    const icon = mobileMenuBtn.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    }
-});
-
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+        // Change icon based on menu state
         const icon = mobileMenuBtn.querySelector('i');
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
+        if (navLinks.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
     });
-});
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
+}
