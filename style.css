@@ -396,9 +396,12 @@ header .header-content .social a i:hover {
     content: "";
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: 0;
     background-color: #2f363e88;
     left: calc(50% - 1px);
+}
+
+.timeline-items.animate::before {
     animation: moveline 6s linear forwards;
 }
 
@@ -417,13 +420,16 @@ header .header-content .social a i:hover {
     margin-bottom: 40px;
     width: 100%;
     position: relative;
-    animation: movedown 1s linear forwards;
     opacity: 0;
+}
+
+.timeline-item.animate {
+    animation: movedown 1s linear forwards;
 }
 
 @keyframes movedown {
     0% {
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-30px);
     }
 
@@ -433,20 +439,20 @@ header .header-content .social a i:hover {
     }
 }
 
-.timeline-item:nth-child(1) {
+.timeline-item.animate:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.timeline-item.animate:nth-child(2) {
     animation-delay: 1s;
 }
 
-.timeline-item:nth-child(2) {
+.timeline-item.animate:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.timeline-item.animate:nth-child(4) {
     animation-delay: 2s;
-}
-
-.timeline-item:nth-child(3) {
-    animation-delay: 3s;
-}
-
-.timeline-item:nth-child(4) {
-    animation-delay: 4s;
 }
 
 .timeline-item:nth-child(odd) {

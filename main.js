@@ -1,21 +1,29 @@
-// Use Intersection Observer for better performance and responsiveness
-const educationSection = document.getElementById("education");
+// Trigger timeline animation on scroll
+const timelineSection = document.querySelector('.timeline-items');
 
-if (educationSection) {
-    const observer = new IntersectionObserver((entries) => {
+if (timelineSection) {
+    const timelineObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                educationSection.style.display = "block";
-            } else {
-                educationSection.style.display = "none";
+                // Add animate class to timeline container
+                timelineSection.classList.add('animate');
+
+                // Add animate class to each timeline item
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                timelineItems.forEach(item => {
+                    item.classList.add('animate');
+                });
+
+                // Unobserve after animation is triggered (only animate once)
+                timelineObserver.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px"
+        threshold: 0.2, // Trigger when 20% of the section is visible
+        rootMargin: '0px'
     });
 
-    observer.observe(educationSection);
+    timelineObserver.observe(timelineSection);
 }
 
 // script.js 
