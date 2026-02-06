@@ -1142,6 +1142,15 @@ h3 {
         padding: 4rem 0;
     }
 
+    #skills .row .flip-card {
+        aspect-ratio: auto;
+        height: 450px;
+    }
+
+    #skills .row .flip-card .back-card {
+        font-size: 16px;
+    }
+
     header .header-content h1 {
         font-size: 48px;
     }
